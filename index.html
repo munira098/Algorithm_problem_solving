@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <script>
+            function loadFile (folderName) {
+                /* function */
+                const importFunction = document.createElement('script');
+                importFunction.src = `./${folderName}/function.js`;
+                document.head.appendChild(importFunction);
+                /* use case */
+                const importTest = document.createElement('script');
+                importTest.src = `./${folderName}/test.js`;
+                document.head.appendChild(importTest);
+            }
+            /* pass the folder name here: try to avoid empty space in folder name */
+            //loadFile('sort_the_array_in_ascending_order');
+
+           // loadFile('sort_the_array_in_decending_order');
+
+            //Delete_largest_number_from_array
+          // loadFile('second_smallest_number');
+          
+           // loadFile('third_largest_number');
+
+            loadFile('Find_subtraction_between_largest_and_smallest_element_in_array');
+
+        </script>
+    
+</body>
+</html>
